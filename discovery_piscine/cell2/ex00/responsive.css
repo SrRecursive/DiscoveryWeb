@@ -1,0 +1,19 @@
+table{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+td{
+	text-align: center;
+	width: 50%;
+	font-weight: bold;
+	font-size: 20px;
+}
+td.left{
+	background-color: yellow;
+	color: blueviolet;
+}
+td.right{
+	background-color: blueviolet;
+	color: yellow;
+}

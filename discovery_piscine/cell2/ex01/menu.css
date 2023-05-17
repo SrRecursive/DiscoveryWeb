@@ -1,0 +1,36 @@
+ul {
+	list-style-type: none;
+	padding: 0;
+	width: 200px;
+	color: yellow;
+}
+
+ul > li {
+	position: relative;
+	background-color: #560070;
+	padding: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+ul > li:hover {
+	background-color: #370047;
+}
+
+ul ul > li {
+	background-color: #560070;
+	padding: 5px;
+	cursor: pointer;
+}
+
+ul ul {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 200px;
+}
+
+ul > li:hover > ul {
+	display: block;
+}
