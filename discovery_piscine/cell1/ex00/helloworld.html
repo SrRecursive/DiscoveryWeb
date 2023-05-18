@@ -1,80 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ex00</title>
-	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-		  const text = document.getElementById("text");
-		  let word = "Hello World";
-		  let intervalId;
-	
-		  const hideConsonants = () => {
-			let hiddenWord = "";
-			for (let i = 0; i < word.length; i++) {
-			  let letter = word[i];
-			  if (!isVowel(letter.toLowerCase())) {
-				hiddenWord += letter;
-			  } else {
-				hiddenWord += `<span style='visibility:hidden;'>${letter}</span>`;
-			  }
-			}
-			text.innerHTML = hiddenWord;
-		  };
-	
-		  const hideVowels = () => {
-			let hiddenWord = "";
-			for (let i = 0; i < word.length; i++) {
-			  let letter = word[i];
-			  if (isVowel(letter.toLowerCase())) {
-				hiddenWord += letter;
-			  } else {
-				hiddenWord += `<span style='visibility:hidden;'>${letter}</span>`;
-			  }
-			}
-			text.innerHTML = hiddenWord;
-		  };
-	
-		  const showWord = () => {
-			text.innerHTML = word;
-		  };
-	
-		  const hideWord = () => {
-			text.innerHTML = "";
-		  };
-	
-		  const isVowel = (letter) => {
-			return ['a', 'e', 'i', 'o', 'u'].indexOf(letter) !== -1;
-		  };
-
-		  const sadFace = () => {
-			text.innerHTML = "<h1>:c</h1>";
-		  }
-	
-		  const startAnimation = () => {
-			intervalId = setInterval(() => {
-			  hideConsonants();
-			  setTimeout(() => {
-				hideVowels();
-				setTimeout(() => {
-					hideWord();
-					setTimeout(() => {
-						sadFace();
-						setTimeout(() => {
-							showWord();
-						}, 1000);
-					}, 500);
-				}, 500);
-			  }, 500);
-			},3000);
-		  };
-	
-		  startAnimation();
-		});
-	  </script>
-</head>
-<body>
-	<p id = "text">Hello World</p>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hello World</title>
+	</head>
+	<body>
+		Hello World
+	</body>
 </html>
