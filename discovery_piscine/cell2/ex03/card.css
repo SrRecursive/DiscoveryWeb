@@ -1,0 +1,24 @@
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+	text-align: center;
+}
+
+td{
+	text-align: center;
+}
+
+td.icons{
+	width: 33.33%;
+}
+
+td.img{
+	display: block;
+}
+		
+footer{
+	text-align: center;
+}
